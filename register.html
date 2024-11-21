@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterPage</title>
+</head>
+<body>
+    <form action="./RegisterSuccess.html">
+        <center><br><br><br><br><br><table cellspacing="15">
+            <tr>
+                <td>
+                    <label for="username">Username*</label>
+                </td>
+                <td>
+                    <input type="text" id="username" pattern=".{8}" title="Min of 8 Characters" name="name" placeholder="username" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password*</label>
+                </td>
+                <td>
+                    <input type="text" id="password" pattern="[a-zA-Z\d@]{8,16}" title="Password must include of 8-16 Characters long & at least one'@'" name="psd" placeholder="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mail">E-mail*</label>
+                </td>
+                <td>
+                    <input type="text" id="mail" name="mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.((com|gov|in|co|org))$" placeholder="E-mail" required>
+                </td>
+                <!-- <td>
+                    <input type="email" id="mail" name="mail" 
+                           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|gov|in|co|org)$" 
+                           placeholder="E-mail" 
+                           required 
+                           title="Please enter a valid email address with .com, .gov, .in, .co, or .org">
+                </td> -->
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register" name="register">
+                </td>
+            </tr>
+    </form>
+</body>
+</html>

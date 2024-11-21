@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForgotPassword</title>
+</head>
+<body>
+    <form action="">
+        <center><br><br><br><br><br><table cellspacing="15">
+            <tr>
+                <td>
+                    <label for="username">Username*</label>
+                </td>
+                <td>
+                    <input type="text" id="username" pattern=".{8}" title="Min of 8 Characters" name="name" placeholder="username" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password*</label>
+                </td>
+                <td>
+                    <input type="text" id="password" name="psd" pattern="[a-zA-Z\d@]{8,16}" title="Password must include of 8-16 Characters long & at least one'@'"  placeholder="password" required>
+                </td>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label for="otp"></label>
+                        <input type="text" name="otp" id="otp" pattern="0718" title="Please match with below otp" placeholder="enter otp" required><br>
+                        <small>Your otp is 0718</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="setpsd" value="Set Password" formaction="./PasswordReset.html">
+                    </td>
+                </tr>
+</body>
+</html>
