@@ -9,7 +9,7 @@
     <br><br><br>
     <center><h2>Registration Succesfull</h2></center>
     <form action="./loginSuccess.html">
-    <center><table cellspacing="15">
+    <center><table cellspacing="15" style="border:1px solid black;">
         <tr>
             <td>
                 <label for="username">Username*</label>
@@ -23,7 +23,8 @@
                 <label for="password">Password*</label>
             </td>
             <td>
-                <input type="text" id="password" pattern="[a-zA-Z\d@]{8,16}" title="Password must include of 8-16 Characters long & at least one'@'" name="psd" placeholder="password" required>
+                <input type="text" id="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[$%&#@]).{8,16}"
+                title="password must contain small , cap , special , digit and length min 8 , max 16 " name="psd" placeholder="password" required>
             </td>
         </tr>
         <tr>
